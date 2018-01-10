@@ -9,3 +9,6 @@ public class LogicalComponentCreationImpl extends AbstractService implements IOp
 			throws TeamRepositoryException {
       }
       }
+
+ IAttribute myattr = workItemCommon.findAttribute(projectArea, IWorkItem.FOUND_IN_PROPERTY, monitor); 
+                 Object myattributevalue = newState.getValue(myattr); 
